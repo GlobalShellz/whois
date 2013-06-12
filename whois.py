@@ -28,7 +28,7 @@ def query ( start, source ):
         type=ip.iptype()
         if ( type == 'PRIVATE' ):
             (a, b, c, d) = start.split('.')
-            c=int(c)+1
+            a=int(a)+1
             start = str(a)+"."+str(b)+"."+str(c)+"."+str(d)
             source=1
             continue
